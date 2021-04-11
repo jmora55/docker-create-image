@@ -1,0 +1,17 @@
+TO RUN DOCKERFILE & CREATE IMAGE
+
+sudo docker build -t [-t tags repository:tag] 
+
+sudo docker image ls [to see the images]
+
+sudo docker run --name [name you want to assign container] -it -d [d cmd runs container detached] [image id]
+
+EX: sudo docker run --name testcontainer -it -d jfkrieu28476f
+
+you can then run 
+
+sudo docker ps -a then find the container and attach to it
+
+sudo exec -it containername /bin/bash
+
+OR JUST USE PORTAINER TO MANAGE - help with testing if your new like me
